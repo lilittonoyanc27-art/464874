@@ -1,0 +1,6 @@
+{
+  "name": "Español con Monita — Իսպաներեն Մոնիտայի հետ",
+  "description": "Aprende español argentino con vídeos interactivos, subtítulos con traducción al armenio, diccionario y cuestionarios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

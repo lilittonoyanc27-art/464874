@@ -1,0 +1,253 @@
+import { MiniGameQuestion } from './types.ts';
+
+export const GAMES_VIDEO_1: MiniGameQuestion[] = [
+  // Juego 1: Completa la frase
+  {
+    id: 'g1-c1',
+    gameCategory: 'completa',
+    promptEs: '«Págame la pizza que no traje ______».',
+    promptHy: '«Վճարի՛ր պիցցայի համար, որովհետև ______ չեմ վերցրել»։',
+    contextEs: 'Monita le pide un favor final a Martín.',
+    contextHy: 'Մոնիտան վերջին խնդրանքն է ուղղում Մարտինին։',
+    options: [
+      { id: 'a', textEs: 'plata', textHy: 'փող' },
+      { id: 'b', textEs: 'hambre', textHy: 'քաղց' },
+      { id: 'c', textEs: 'tiempo', textHy: 'ժամանակ' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: 'En Argentina, «plata» se usa para referirse al dinero en efectivo.',
+    explanationHy: 'Արգենտինայում «plata»-ն օգտագործվում է կանխիկ դրամի իմաստով։',
+  },
+  {
+    id: 'g1-c2',
+    gameCategory: 'completa',
+    promptEs: '«¿Se dio cuenta de la cagada que se va a mandar casándose con esa ______?».',
+    promptHy: '«Հասկացա՞ք, թե ինչ մեծ հիմարություն եք անելու՝ այդ ______ հետ ամուսնանալով»։',
+    contextEs: 'Monita le advierte a Martín sobre su prometida.',
+    contextHy: 'Մոնիտան զգուշացնում է Մարտինին իր հարսնացուի մասին։',
+    options: [
+      { id: 'a', textEs: 'mina', textHy: 'աղջկա' },
+      { id: 'b', textEs: 'casa', textHy: 'տան' },
+      { id: 'c', textEs: 'fiesta', textHy: 'խնջույքի' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: '«Mina» es el término del lunfardo para mujer o chica.',
+    explanationHy: '«Mina»-ն արգենտինական լունֆարդո սլենգ է աղջկա կամ կնոջ համար։',
+  },
+  {
+    id: 'g1-c3',
+    gameCategory: 'completa',
+    promptEs: '«Hasta ayer me perseguía por los pasillos para ______».',
+    promptHy: '«Մինչև երեկ միջանցքներով հետևիցս էիք ընկնում, որ ինձ ______»։',
+    contextEs: 'Monita le recuerda la actitud de Martín en el trabajo.',
+    contextHy: 'Մոնիտան հիշեցնում է Մարտինի պահվածքն աշխատավայրում։',
+    options: [
+      { id: 'a', textEs: 'apretarme', textHy: 'գրկեք/համբուրեք' },
+      { id: 'b', textEs: 'saludarme', textHy: 'բարևեք' },
+      { id: 'c', textEs: 'despedirme', textHy: 'հեռացնեք' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: '«Apretar» en este contexto alude a un acercamiento físico o romántico apasionado.',
+    explanationHy: '«Apretar»-ն այստեղ նշանակում է կրքոտ գրկել կամ համբուրել։',
+  },
+
+  // Juego 2: ¿Quién lo dijo?
+  {
+    id: 'g1-q1',
+    gameCategory: 'quien_lo_dijo',
+    promptEs: '«Si me llega a poner la mano encima no la cuenta».',
+    promptHy: '«Եթե համարձակվի ձեռք բարձրացնել ինձ վրա, ողջ չի մնա»։',
+    options: [
+      { id: 'a', textEs: 'Monita', textHy: 'Մոնիտան' },
+      { id: 'b', textEs: 'Martín', textHy: 'Մարտինը' },
+      { id: 'c', textEs: 'Ricardo', textHy: 'Ռիկարդոն' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: 'Monita defiende con valentía su postura sobre Kike.',
+    explanationHy: 'Մոնիտան վճռականորեն սպառնում է, որ ոչ ոք չի կարող իր վրա ձեռք բարձրացնել։',
+  },
+  {
+    id: 'g1-q2',
+    gameCategory: 'quien_lo_dijo',
+    promptEs: '«¿Qué querés de mí?».',
+    promptHy: '«Ի՞նչ ես ուզում ինձնից»։',
+    options: [
+      { id: 'a', textEs: 'Martín Quesada', textHy: 'Մարտին Կեսադան' },
+      { id: 'b', textEs: 'Monita', textHy: 'Մոնիտան' },
+      { id: 'c', textEs: 'Kike', textHy: 'Կիկեն' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: 'Martín le pregunta exasperado a Monita tras todos sus reproches.',
+    explanationHy: 'Մարտինն է հարցնում Մոնիտային՝ զարմացած նրա պահանջներից։',
+  },
+  {
+    id: 'g1-q3',
+    gameCategory: 'quien_lo_dijo',
+    promptEs: '«Tampoco se lo prohibió».',
+    promptHy: '«Բայց և չեք արգելել»։',
+    options: [
+      { id: 'a', textEs: 'Monita', textHy: 'Մոնիտան' },
+      { id: 'b', textEs: 'Martín', textHy: 'Մարտինը' },
+      { id: 'c', textEs: 'Ricardo', textHy: 'Ռիկարդոն' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: 'Monita le replica a Martín cuando él dice que no mandó a Kike a pegarle.',
+    explanationHy: 'Մոնիտան արագ պատասխանում է Մարտինին, երբ նա պնդում է, թե չի հրահանգել ծեծել։',
+  },
+
+  // Juego 3: Responde como el personaje
+  {
+    id: 'g1-r1',
+    gameCategory: 'responde',
+    promptEs: 'Martín te dice: «Él te quiere mucho. Y no merece que lo haga sufrir así». ¿Qué le responde Monita?',
+    promptHy: 'Մարտինն ասում է. «Նա քեզ շատ է սիրում: Եվ արժանի չէ, որ նրան տառապեցնես»: Ի՞նչ է պատասխանում Մոնիտան:',
+    options: [
+      { id: 'a', textEs: '«Lo hubiera pensado antes. Entre nosotros se terminó todo».', textHy: '«Ավելի շուտ պետք է մտածեր։ Մեր միջև ամեն ինչ ավարտված է»։' },
+      { id: 'b', textEs: '«Tenés razón, voy a llamarlo ahora mismo».', textHy: '«Իրավացի ես, հենց հիմա կզանգահարեմ նրան»։' },
+      { id: 'c', textEs: '«No me importa, tráeme un postre».', textHy: '«Ինձ չի հետաքրքրում, աղանդեր բեր ինձ»։' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: 'Monita es tajante: «Lo hubiera pensado antes. Entre nosotros se terminó todo».',
+    explanationHy: 'Մոնիտան անդրդվելի է և հայտարարում է, որ ամեն ինչ ավարտված է։',
+  },
+  {
+    id: 'g1-r2',
+    gameCategory: 'responde',
+    promptEs: 'Martín te pregunta resignado: «¿Qué querés de mí?». ¿Cómo responde Monita con picardía?',
+    promptHy: 'Մարտինը հարցնում է. «Ի՞նչ ես ուզում ինձնից»: Ինչպե՞ս է Մոնիտան խորամանկորեն պատասխանում:',
+    options: [
+      { id: 'a', textEs: '«Págame la pizza que no traje plata».', textHy: '«Վճարի՛ր պիցցայի համար, որովհետև գումար չեմ վերցրել»։' },
+      { id: 'b', textEs: '«Quiero que renuncies a tu empresa».', textHy: '«Ուզում եմ, որ հրաժարվես քո ընկերությունից»։' },
+      { id: 'c', textEs: '«No quiero nada de vos».', textHy: '«Քեզնից ոչինչ չեմ ուզում»։' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: 'El remate cómico de la escena es pedirle que pague la pizza.',
+    explanationHy: 'Տեսարանի հումորային գագաթնակետն այն է, որ նա խնդրում է վճարել պիցցայի համար։',
+  },
+];
+
+export const GAMES_VIDEO_2: MiniGameQuestion[] = [
+  // Juego 1: Completa la frase
+  {
+    id: 'g2-c1',
+    gameCategory: 'completa',
+    promptEs: '«Esta es una fiesta privada. Ya lo sé. Me ______».',
+    promptHy: '«Սա մասնավոր խնջույք է։ Արդեն գիտեմ։ Ես ______»։',
+    contextEs: 'Monita hablando con Primoski.',
+    contextHy: 'Մոնիտան խոսում է Պրիմոսկիի հետ։',
+    options: [
+      { id: 'a', textEs: 'colé', textHy: 'առանց հրավերի ներս մտա' },
+      { id: 'b', textEs: 'escapé', textHy: 'փախա' },
+      { id: 'c', textEs: 'perdí', textHy: 'կորա' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: '«Colarse» significa ingresar sin autorización a un evento.',
+    explanationHy: '«Colarse» նշանակում է առանց հրավերի կամ տոմսի ներխուժել։',
+  },
+  {
+    id: 'g2-c2',
+    gameCategory: 'completa',
+    promptEs: '«Yo no entiendo un ______. Pero si me espera acá, le traigo al que entiende de todo».',
+    promptHy: '«Ես ընդհանրապես ոչինչ չեմ ______, բայց եթե սպասեք, կբերեմ մասնագետին»։',
+    contextEs: 'Primoski admite que no domina el tema.',
+    contextHy: 'Պրիմոսկին խոստովանում է, որ թեմայից ոչինչ չի հասկանում։',
+    options: [
+      { id: 'a', textEs: 'pomo', textHy: 'հասկանում (pomo)' },
+      { id: 'b', textEs: 'libro', textHy: 'գիրք' },
+      { id: 'c', textEs: 'minuto', textHy: 'րոպե' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: '«No entender un pomo» es la locución argentina para no entender nada.',
+    explanationHy: '«No entender un pomo» արգենտինական դարձվածքն է՝ ոչինչ չհասկանալ։',
+  },
+  {
+    id: 'g2-c3',
+    gameCategory: 'completa',
+    promptEs: '«No se preocupe, porque tengo para ofrecerle el mejor negocio de su ______».',
+    promptHy: '«Մի անհանգստացեք, որովհետև առաջարկելու եմ Ձեր ______ լավագույն գործարքը»։',
+    contextEs: 'Monita seduce comercialmente a Primoski.',
+    contextHy: 'Մոնիտան գրավում է Պրիմոսկիին գործնական առաջարկով։',
+    options: [
+      { id: 'a', textEs: 'vida', textHy: 'կյանքի' },
+      { id: 'b', textEs: 'semana', textHy: 'շաբաթվա' },
+      { id: 'c', textEs: 'familia', textHy: 'ընտանիքի' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: 'Monita le promete «el mejor negocio de su vida».',
+    explanationHy: 'Մոնիտան խոստանում է «նրա կյանքի լավագույն գործարքը»։',
+  },
+
+  // Juego 2: ¿Quién lo dijo?
+  {
+    id: 'g2-q1',
+    gameCategory: 'quien_lo_dijo',
+    promptEs: '«¡Qué partuza, eh!».',
+    promptHy: '«Ի՜նչ մեծ խնջույք է, հա՞»։',
+    options: [
+      { id: 'a', textEs: 'Monita', textHy: 'Մոնիտան' },
+      { id: 'b', textEs: 'Primoski', textHy: 'Պրիմոսկին' },
+      { id: 'c', textEs: 'Martín', textHy: 'Մարտինը' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: 'Monita entra desinhibida saludando a los novios con jerga festiva.',
+    explanationHy: 'Մոնիտան է ասում՝ մտնելով շքեղ դահլիճ։',
+  },
+  {
+    id: 'g2-q2',
+    gameCategory: 'quien_lo_dijo',
+    promptEs: '«La notera más ridícula de la televisión».',
+    promptHy: '«Հեռուստատեսության ամենածիծաղելի լրագրողը»։',
+    options: [
+      { id: 'a', textEs: 'La novia del casamiento', textHy: 'Հարսնացուն' },
+      { id: 'b', textEs: 'Monita', textHy: 'Մոնիտան' },
+      { id: 'c', textEs: 'Martín', textHy: 'Մարտինը' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: 'La novia reconoce a Monita en la televisión y la describe así.',
+    explanationHy: 'Հարսնացուն է ճանաչում Մոնիտային և այդպես անվանում։',
+  },
+  {
+    id: 'g2-q3',
+    gameCategory: 'quien_lo_dijo',
+    promptEs: '«Ni una palabra a mi señora».',
+    promptHy: '«Կնոջս՝ ոչ մի խոսք»։',
+    options: [
+      { id: 'a', textEs: 'Primoski', textHy: 'Պրիմոսկին' },
+      { id: 'b', textEs: 'Martín', textHy: 'Մարտինը' },
+      { id: 'c', textEs: 'El mozo', textHy: 'Մատուցողը' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: 'Primoski acepta escuchar pero exige discreción total ante su esposa.',
+    explanationHy: 'Պրիմոսկին է պահանջում գաղտնի պահել կնոջից։',
+  },
+
+  // Juego 3: Responde como el personaje
+  {
+    id: 'g2-r1',
+    gameCategory: 'responde',
+    promptEs: 'Un invitado te dice: «¿Puedo tener el honor de bailar con usted?». ¿Qué responde Monita sin rodeos?',
+    promptHy: 'Հյուրերից մեկը հարցնում է. «Կարո՞ղ եմ պատիվ ունենալ պարելու Ձեզ հետ»: Ի՞նչ է կտրուկ պատասխանում Մոնիտան:',
+    options: [
+      { id: 'a', textEs: '«No».', textHy: '«Ոչ»։' },
+      { id: 'b', textEs: '«Sería un placer, caballero».', textHy: '«Հաճույքով, պարո՛ն»։' },
+      { id: 'c', textEs: '«Solo si me das dinero».', textHy: '«Միայն եթե գումար տաս»։' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: 'Monita rechaza al invitado con un seco e inolvidable «No».',
+    explanationHy: 'Մոնիտան անմիջապես և կտրուկ ասում է «Ոչ»։',
+  },
+  {
+    id: 'g2-r2',
+    gameCategory: 'responde',
+    promptEs: 'Primoski dice: «Esta es una fiesta privada». ¿Cómo responde Monita con total descaro?',
+    promptHy: 'Պրիմոսկին ասում է. «Սա մասնավոր խնջույք է»: Ինչպե՞ս է Մոնիտան հանդուգն պատասխանում:',
+    options: [
+      { id: 'a', textEs: '«Ya lo sé. Me colé».', textHy: '«Արդեն գիտեմ։ Առանց հրավերի եմ ներս մտել»։' },
+      { id: 'b', textEs: '«Disculpe, me equivoqué de puerta».', textHy: '«Կներեք, դուռը շփոթել եմ»։' },
+      { id: 'c', textEs: '«Yo soy la dueña del salón».', textHy: '«Ես այս սրահի տերն եմ»։' },
+    ],
+    correctOptionId: 'a',
+    explanationEs: 'Monita no duda ni un segundo en admitir: «Ya lo sé. Me colé».',
+    explanationHy: 'Մոնիտան հանգիստ ընդունում է՝ «Ya lo sé. Me colé»։',
+  },
+];

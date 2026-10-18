@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-burgundy: #750D32;
+  --color-burgundy-dark: #4d0820;
+  --color-burgundy-light: #941341;
+  --color-red-monita: #D62839;
+  --color-orange-monita: #FF8C42;
+  --color-yellow-monita: #FFD166;
+  --color-cream: #FFF8EF;
+  --color-cream-card: #FFFFFF;
+  --font-sans: 'Outfit', 'Noto Sans Armenian', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FFF8EF;
+  color: #1f2937;
+}
+
+/* Custom scrollbar for subtitles */
+.subtitles-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.subtitles-scroll::-webkit-scrollbar-track {
+  background: #FFF8EF;
+}
+.subtitles-scroll::-webkit-scrollbar-thumb {
+  background-color: #FF8C42;
+  border-radius: 9999px;
+}
